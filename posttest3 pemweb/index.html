@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sistem Booking Makeup Artist / Salon Online</title>
+  <meta name="description" content="Landing page untuk sistem booking Makeup Artist dan Salon — pesan layanan, lihat profil artist, dan jadwalkan perawatan." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div role="banner">
+      <h1>Sistem Booking Makeup Artist &amp; Salon</h1>
+      <p>Pesan layanan makeup dan salon secara online — cepat, aman, dan mudah.</p>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#services">Layanan</a></li>
+          <li><a href="#artists">Makeup Artist</a></li>
+          <li><a href="#how-it-works">Cara Pesan</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" aria-labelledby="home-title">
+      <h2 id="home-title">Selamat datang</h2>
+      <p>Platform booking untuk mencari dan memesan makeup artist atau layanan salon terdekat.</p>
+    </section>
+
+    <section id="services" aria-labelledby="services-title">
+      <h2 id="services-title">Layanan Kami</h2>
+      <ul>
+        <li>
+          <article class="card" aria-labelledby="service-makeup">
+            <h3 id="service-makeup">Makeup untuk Acara</h3>
+            <p>Riasan untuk pernikahan, prewed, wisuda, dan acara spesial lainnya.</p>
+          </article>
+        </li>
+        <li>
+          <article class="card" aria-labelledby="service-salon">
+            <h3 id="service-salon">Perawatan Salon</h3>
+            <p>Potong rambut, pewarnaan, manicure, pedicure, dan perawatan kulit.</p>
+          </article>
+        </li>
+        <li>
+          <article class="card" aria-labelledby="service-home">
+            <h3 id="service-home">Mobile Makeup (Datang ke Lokasi)</h3>
+            <p>Layanan makeup artist yang datang ke rumah atau lokasi acara.</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section id="artists" aria-labelledby="artists-title">
+      <h2 id="artists-title">Daftar Makeup Artist</h2>
+      <ul>
+        <li>
+          <article class="artist-card">
+            <h3>Nama Artist 1</h3>
+            <p>Spesialis bridal, pengalaman 5+ tahun.</p>
+            <p><a href="#booking" class="btn btn-primary">Lihat Profil &amp; Booking</a></p>
+          </article>
+        </li>
+        <li>
+          <article class="artist-card">
+            <h3>Nama Artist 2</h3>
+            <p>Spesialis editorial &amp; foto prewed.</p>
+            <p><a href="#booking" class="btn btn-primary">Lihat Profil &amp; Booking</a></p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section id="how-it-works" aria-labelledby="how-title">
+      <h2 id="how-title">Cara Pesan</h2>
+      <ol>
+        <li>Pilih layanan dan artist.</li>
+        <li>Pilih tanggal &amp; jam yang tersedia.</li>
+        <li>Konfirmasi dan lakukan pembayaran.</li>
+        <li>Terima konfirmasi booking via email / SMS.</li>
+      </ol>
+    </section>
+
+    <section id="testimonials" aria-labelledby="testi-title">
+      <h2 id="testi-title">Testimonial</h2>
+      <blockquote>
+        <p>"Layanan cepat dan artistnya profesional!" — Pelanggan A</p>
+      </blockquote>
+    </section>
+
+    <!-- FORM BOOKING -->
+    <section id="booking" aria-labelledby="booking-title">
+      <h2 id="booking-title">Form Booking</h2>
+      <form id="bookingForm">
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="layanan">Pilih Layanan:</label><br>
+        <select id="layanan" name="layanan" required>
+          <option value="">-- Pilih Layanan --</option>
+          <option value="Makeup Acara">Makeup Acara</option>
+          <option value="Perawatan Salon">Perawatan Salon</option>
+          <option value="Mobile Makeup">Mobile Makeup</option>
+        </select><br><br>
+
+        <label for="tanggal">Tanggal:</label><br>
+        <input type="date" id="tanggal" name="tanggal" required><br><br>
+
+        <label for="jam">Jam:</label><br>
+        <input type="time" id="jam" name="jam" required><br><br>
+
+        <button type="submit" class="btn btn-primary">Konfirmasi Booking</button>
+      </form>
+
+      <div id="hasilBooking" style="margin-top:1rem; font-weight:bold;"></div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Kontak</h2>
+      <address>
+        <p>Email: <a href="mailto:syalomithachello1111@gmail.com">syalomithachello1111@gmail.com</a></p>
+        <p>Telepon / WhatsApp: +62-821-5534-8563</p>
+      </address>
+    </section>
+  </main>
+
+  <aside aria-label="Info tambahan">
+    <h2>Promo</h2>
+    <p>Dapatkan diskon khusus untuk pemesanan pertama.</p>
+  </aside>
+
+  <footer role="contentinfo">
+    <p>&copy; <span id="year">2025</span> Sistem Booking Makeup Artist / Salon Online</p>
+    <p>Referensi desain / inspirasi:</p>
+    <ul>
+      <li><a href="https://dribbble.com" target="_blank">Dribbble — UI &amp; landing inspirations</a></li>
+      <li><a href="https://www.behance.net" target="_blank">Behance — Portofolio desain</a></li>
+      <li><a href="https://www.awwwards.com" target="_blank">Awwwards — Inspirasi website profesional</a></li>
+    </ul>
+    <p>Repository &amp; GitHub Pages: tambahkan link di sini setelah kamu deploy.</p>
+  </footer>
+
+  <!-- file JS eksternal -->
+  <script src="script.js"></script>
+</body>
+</html>
